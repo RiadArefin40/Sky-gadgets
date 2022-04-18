@@ -1,11 +1,13 @@
 .footer{
-    background-color:rgb(189, 30, 25);
+    background-color:rgb(177, 31, 26);
 }
 .footer h1{
     color: aliceblue;
+    
     
 
 }
 .footer h5{
     color: aliceblue;
+    font-style: italic;
 }

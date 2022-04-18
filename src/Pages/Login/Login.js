@@ -16,12 +16,15 @@ const Login = () => {
         user,
         error
       ] = useSignInWithEmailAndPassword(auth);
-    let errorLogin;
-    if(error){
-        errorLogin=<div>
-             <p className="text-danger text-center">Error: {error.message}</p>
-        </div>
-    }
+      let errorLogin;
+      if(error){
+          
+            errorLogin=<div>
+               <p className="text-danger text-center">Error: {error.message}</p>
+          </div>
+          
+          
+      }
     const navigate = useNavigate()
     const emailRef=useRef('');
     
