@@ -11,6 +11,7 @@ import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
 import Notfound from './Pages/Shared/Notfound/Notfound';
+import VipService from './Pages/VipService/VipService';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
          
          }> </Route>
          <Route path='*' element={<Notfound></Notfound>}></Route>
+         <Route path='/vip' element={<VipService></VipService>}></Route>
        </Routes>
 
         <Footer></Footer>
