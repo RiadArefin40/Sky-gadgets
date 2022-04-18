@@ -1,6 +1,9 @@
 import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
-import './CustomerRivew.css'
+import './CustomerRivew.css';
+import img1 from '../../../Assets/images/expert-1.jpg';
+import img2 from '../../../Assets/images/expert-2.jpg';
+
 
 const CustomerReview = () => {
   return (
@@ -11,25 +14,25 @@ const CustomerReview = () => {
      
         <CardGroup className="py-5" >
          
-          <Card className="m-5 ">
-            <Card.Img variant="top" src="holder.js/100px160" />
+          <Card className="m-5 card-details ">
+            <Card.Img variant="top" src={img1} />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>Mr. Abraham Linkon</Card.Title>
               <Card.Text>
-                This card has supporting text below as a natural lead-in to
-                additional content.
+               I got my healthy and fit life from Fitness-press.
               </Card.Text>
+              <p>Ratings : 5</p>
             </Card.Body>
             
           </Card>
-          <Card className="m-5 ">
-            <Card.Img variant="top" src="holder.js/100px160" />
+          <Card className="m-5 card-details">
+            <Card.Img variant="top" src={img2} />
             <Card.Body>
-              <Card.Title>Card title</Card.Title>
+              <Card.Title>Mr.John Nabisko</Card.Title>
               <Card.Text>
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. 
+                If you want to be healthy fitness-press can be a good option
               </Card.Text>
+              <p>Ratings : 4.8</p>
             </Card.Body>
             
           </Card>

@@ -12,3 +12,6 @@
     font-style: italic;
    
 }
+.card-details img{
+    border-radius: 50%;
+}
