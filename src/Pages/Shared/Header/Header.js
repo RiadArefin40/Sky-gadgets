@@ -15,16 +15,16 @@ const Header = () => {
     <div>
       <Navbar className="navbar" collapseOnSelect expand="lg" bg="" variant="dark">
         <Container>
-          <Navbar.Brand href="/home">Fitness-Press</Navbar.Brand>
+          <Navbar.Brand as={Link} to="/home">Fitness-Press</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto ">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/blog">Blog</Nav.Link>
+              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
              
             </Nav>
             <Nav>
-              <Nav.Link href="/about">About</Nav.Link>
+              <Nav.Link as={Link} to="/about">About</Nav.Link>
               {
                   user ?    <Nav.Link onClick={handleSignOut}>
                   Sign Out
