@@ -1,0 +1,11 @@
+.blog{
+    padding: 50px;
+    background-color: rgb(66, 67, 68);
+    margin: 5px;
+}
+.blog p{
+    color: aliceblue;
+}
+.blog h3,h5,li{
+    color: aliceblue;
+}
