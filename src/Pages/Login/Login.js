@@ -3,10 +3,11 @@ import { Button, Form } from "react-bootstrap";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import SocialLogin from "./SocialLogin/SocialLogin";
 import './Login.css'
-import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 
 const Login = () => {
+    const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
     const [
         signInWithEmailAndPassword,
         user,
@@ -21,6 +22,7 @@ const Login = () => {
     }
     const navigate = useNavigate()
     const emailRef=useRef('');
+    const email = emailRef.current.value;
     const passwordRef=useRef('');
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
@@ -36,6 +38,9 @@ const Login = () => {
     if(user){
         navigate(from, { replace: true })
    }
+   const resetPassword= async()=>{
+    await sendPasswordResetEmail(email);
+}
   return (
     <div className="container w-50">
       <h2 className="my-5 text-center">Please Login</h2>
@@ -60,6 +65,7 @@ const Login = () => {
         </div>
       </Form>
       <p className="text-center py-3">New to Fitness-Press? <Link className="text-decoration-none" to='/register'> Please Sign Up</Link></p>
+      <p className="text-center" >Forget password? <Button onClick={resetPassword} variant="link" className="text-decoration-none">Reset-Password</Button> </p>
       {errorLogin}
       <SocialLogin></SocialLogin>
     </div>
