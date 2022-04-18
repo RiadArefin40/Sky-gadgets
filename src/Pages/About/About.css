@@ -1,0 +1,10 @@
+.about-me img{
+    border-radius: 50%;
+}
+.aboutme-details{
+    background-color: rgb(87, 83, 83);
+}
+.aboutme-details p{
+    color: white;
+    padding: 50px;
+}

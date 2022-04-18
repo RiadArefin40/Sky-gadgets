@@ -24,7 +24,7 @@ const Header = () => {
              
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">About</Nav.Link>
+              <Nav.Link href="/about">About</Nav.Link>
               {
                   user ?    <Nav.Link onClick={handleSignOut}>
                   Sign Out
