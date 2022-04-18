@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "name": "Balance Body Mind",
+    "price": "100",
+    "description": "loream djc sdjcujsw usdc",
+    "img": "https://i.ibb.co/xfDhwTY/service1.png"
+  },
+
+  {
+    "id": 2,
+    "name": "Nutrition plan",
+    "price": "200",
+    "description": "loream djc sdjcujsw usdc",
+    "img": "https://i.ibb.co/6BhMcf6/service2.png"
+  },
+
+  {
+    "id": 3,
+    "name": "Fitness and Performance",
+    "price": "150",
+    "description": "loream djc sdjcujsw usdc",
+    "img": "https://i.ibb.co/gv48hFK/service3.png"
+  },
+
+  {
+    "id": 4,
+    "name": "Routine Programme",
+    "price": "100",
+    "description": "loream djc sdjcujsw usdc",
+    "img": "https://i.ibb.co/BgbqRSn/service4.png"
+  },
+
+  {
+    "id": 5,
+    "name": "WetLoss plan",
+    "price": "200",
+    "description": "loream djc sdjcujsw usdc",
+    "img": "https://i.ibb.co/3Bygthz/service5.png"
+  },
+
+  {
+    "id": 6,
+    "name": "Cardiac Exercise",
+    "price": "150",
+    "description": "loream djc sdjcujsw usdc",
+    "img": "https://i.ibb.co/8xkL2h6/service6.png"
+  }
+]
