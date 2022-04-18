@@ -4,7 +4,8 @@
     "name": "Balance Body Mind",
     "price": "100",
     "description": "loream djc sdjcujsw usdc",
-    "img": "https://i.ibb.co/xfDhwTY/service1.png"
+    "img": "https://i.ibb.co/xfDhwTY/service1.png",
+    "text":"Balance your body and mind for a healthy life"
   },
 
   {
@@ -12,7 +13,8 @@
     "name": "Nutrition plan",
     "price": "200",
     "description": "loream djc sdjcujsw usdc",
-    "img": "https://i.ibb.co/6BhMcf6/service2.png"
+    "img": "https://i.ibb.co/6BhMcf6/service2.png",
+    "text":"Propar nutrition plan is very importan for body to be healthy"
   },
 
   {
@@ -20,7 +22,8 @@
     "name": "Fitness and Performance",
     "price": "150",
     "description": "loream djc sdjcujsw usdc",
-    "img": "https://i.ibb.co/gv48hFK/service3.png"
+    "img": "https://i.ibb.co/gv48hFK/service3.png",
+    "text":"Healthy and fit body always enhance your performance"
   },
 
   {
@@ -28,7 +31,8 @@
     "name": "Routine Programme",
     "price": "100",
     "description": "loream djc sdjcujsw usdc",
-    "img": "https://i.ibb.co/BgbqRSn/service4.png"
+    "img": "https://i.ibb.co/BgbqRSn/service4.png",
+    "text":"Daily program for physical exercise is very helpful"
   },
 
   {
@@ -36,7 +40,8 @@
     "name": "WetLoss plan",
     "price": "200",
     "description": "loream djc sdjcujsw usdc",
-    "img": "https://i.ibb.co/3Bygthz/service5.png"
+    "img": "https://i.ibb.co/3Bygthz/service5.png",
+    "text":" Proper height and weight measurement is very important"
   },
 
   {
@@ -44,6 +49,7 @@
     "name": "Cardiac Exercise",
     "price": "150",
     "description": "loream djc sdjcujsw usdc",
-    "img": "https://i.ibb.co/8xkL2h6/service6.png"
+    "img": "https://i.ibb.co/8xkL2h6/service6.png",
+    "text":"Cardiac exercise is very important for a healthy life"
   }
 ]

@@ -3,7 +3,7 @@ import { Card, Col } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 
 const Service = ({service}) => {
-    const {name,img,id,price}=service;
+    const {name,img,id,price,text}=service;
     const navigate = useNavigate();
     const navigateToService=id=>{
         navigate(`/service/${id}`)
@@ -18,7 +18,7 @@ const Service = ({service}) => {
             <Card.Title className="text-center">{name}</Card.Title>
             <h5 className="text-center text-danger">Price : ${price}</h5>
             <Card.Text>
-              This is a longer card with supporting text below as a natural
+              {text}
               
             </Card.Text>
             <button onClick={()=>navigateToService(id)}  className='btn btn-dark w-100 button'>Book Now</button>

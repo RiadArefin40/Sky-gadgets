@@ -13,14 +13,14 @@ const Login = () => {
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
     const [
         signInWithEmailAndPassword,
-        user,
+        user,loading,
         error
       ] = useSignInWithEmailAndPassword(auth);
       let errorLogin;
-      if(error){
+       if(error){
           
             errorLogin=<div>
-               <p className="text-danger text-center">Error: {error.message}</p>
+              <p className="text-danger text-center">Error: {error?.message}</p>
           </div>
           
           
