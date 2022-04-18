@@ -10,6 +10,7 @@ import Register from './Pages/Register/Register';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
+import Notfound from './Pages/Shared/Notfound/Notfound';
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
          
          
          }> </Route>
-         <Route></Route>
+         <Route path='*' element={<Notfound></Notfound>}></Route>
        </Routes>
 
         <Footer></Footer>
