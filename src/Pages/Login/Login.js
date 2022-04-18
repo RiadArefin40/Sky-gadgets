@@ -5,14 +5,16 @@ import SocialLogin from "./SocialLogin/SocialLogin";
 import './Login.css'
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
+import { ToastContainer, toast } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
     const [
         signInWithEmailAndPassword,
         user,
-        loading,
-        error,
+        error
       ] = useSignInWithEmailAndPassword(auth);
     let errorLogin;
     if(error){
@@ -22,7 +24,7 @@ const Login = () => {
     }
     const navigate = useNavigate()
     const emailRef=useRef('');
-    const email = emailRef.current.value;
+    
     const passwordRef=useRef('');
     const location = useLocation();
     let from = location.state?.from?.pathname || "/";
@@ -39,7 +41,15 @@ const Login = () => {
         navigate(from, { replace: true })
    }
    const resetPassword= async()=>{
-    await sendPasswordResetEmail(email);
+    const email = emailRef.current.value;
+    if(email){
+        await sendPasswordResetEmail(email);
+        toast('Email sent for reset password');
+    }
+    else{
+        toast('please enter your email adress')
+    }
+   
 }
   return (
     <div className="container w-50">
@@ -54,20 +64,19 @@ const Login = () => {
           <Form.Label>Password</Form.Label>
           <Form.Control ref={passwordRef} type="password" placeholder="Password" required />
         </Form.Group>
-        <Form.Group className="mb-3" controlId="formBasicCheckbox">
-          <Form.Check type="checkbox" label="Check me out" />
-        </Form.Group>
+       
         <div>
         
-          <Button className="btn w-25 d-block mx-auto" variant="dark" type="submit">
+          <Button className="btn button w-25 d-block mx-auto" variant="dark" type="submit">
             Login
           </Button>
         </div>
       </Form>
       <p className="text-center py-3">New to Fitness-Press? <Link className="text-decoration-none" to='/register'> Please Sign Up</Link></p>
-      <p className="text-center" >Forget password? <Button onClick={resetPassword} variant="link" className="text-decoration-none">Reset-Password</Button> </p>
+      <p className="text-center" >Forget password? <button  onClick={resetPassword} variant="link" className="btn  btn-link text-decoration-none">Reset-Password</button> </p>
       {errorLogin}
       <SocialLogin></SocialLogin>
+      <ToastContainer />
     </div>
   );
 };

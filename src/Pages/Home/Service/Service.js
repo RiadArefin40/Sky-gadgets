@@ -21,7 +21,7 @@ const Service = ({service}) => {
               This is a longer card with supporting text below as a natural
               
             </Card.Text>
-            <button onClick={()=>navigateToService(id)}  className='btn btn-primary w-100'>Book:{name}</button>
+            <button onClick={()=>navigateToService(id)}  className='btn btn-dark w-100 button'>Book Now</button>
           </Card.Body>
         </Card>
       </Col>

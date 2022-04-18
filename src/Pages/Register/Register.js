@@ -53,16 +53,14 @@ const Register = () => {
             required
           />
         </Form.Group>
-        <Form.Group className="mb-3 " controlId="formBasicCheckbox">
-          <Form.Check  type="checkbox" label="Accept terms and conditions" />
-        </Form.Group>
+       
         <div>
           <Button
-            className="btn w-25 d-block mx-auto"
+            className="btn button w-25 d-block mx-auto"
             variant="dark"
             type="submit"
           >
-            Login
+            Register
           </Button>
         </div>
       </Form>
